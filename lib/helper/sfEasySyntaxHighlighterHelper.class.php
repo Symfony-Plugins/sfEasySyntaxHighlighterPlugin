@@ -23,7 +23,7 @@ class sfEasySyntaxHighlighterHelper extends GeSHi
    */
   static public function render($source, $language)
   {
-    if (is_null($renderInstance))
+    if (is_null(self::$renderInstance))
     {
       self::$renderInstance = new self($source, $language);
     }
